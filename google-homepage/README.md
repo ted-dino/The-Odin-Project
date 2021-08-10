@@ -15,6 +15,9 @@ Using the browser’s developer tools (right-clicking something on the page and 
 ![screenshot-www google com-2021 08 10-19_24_26](https://user-images.githubusercontent.com/84649871/128863822-32264cae-0809-40ff-836f-45d4f775b06c.png)
 
 # # What I did
+![my_site](https://user-images.githubusercontent.com/84649871/128868103-c06d7ae4-05ca-4909-aebb-d575d5a31028.png)
+
+[See it live here](https://ted-dino.github.io/The-Odin-Project/google-homepage/)
 
 
 
@@ -22,5 +25,3 @@ Using the browser’s developer tools (right-clicking something on the page and 
 It took me 2 days to finish this project. I'm new to Web Development so please don't just my code.
 
 CSS IS SO HARD!!!
-
-Pace out!
