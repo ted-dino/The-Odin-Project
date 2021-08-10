@@ -22,6 +22,6 @@ Using the browser’s developer tools (right-clicking something on the page and 
 
 
 
-It took me 2 days to finish this project. I'm new to Web Development so please don't just my code.
+It took me 2 days to finish this project. I'm new to Web Development so please don't judge my code.
 
 CSS IS SO HARD!!!
