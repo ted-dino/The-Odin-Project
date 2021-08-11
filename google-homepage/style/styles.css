@@ -67,6 +67,10 @@ main {
   border-radius: 30px;
 }
 
+.input-border:hover{
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.20);
+}
+
 .input-field {
   font-size: 14x;
   border: 0;
@@ -98,9 +102,12 @@ main {
 .below-section p a{
   color: blue;
   margin: 3px;
-  text-decoration: underline;
   font-size: 13px;
   line-height: 28px;
+}
+
+.below-section p a:hover{
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -123,6 +130,10 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 20px;
+}
+
+.container a:hover{
+  text-decoration: underline;
 }
 
 .footer-left {
