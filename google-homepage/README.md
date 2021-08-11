@@ -2,7 +2,7 @@
 
 Project link: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/html-css
 
-# # Task - Build the google homepage
+# # Task - Build the [Google](https://www.google.com/) homepage
 
 Instruction:
 
@@ -10,7 +10,7 @@ For this mini-project, you’ll deconstruct an existing web page and rebuild it.
 
 Using the browser’s developer tools (right-clicking something on the page and clicking “inspect element” will get you there) will be your best friend. Build the page in a .html text file and open it in your browser to check it out.
 
-# # The actual site
+# # The actual site (for my country)
 
 ![screenshot-www google com-2021 08 10-19_24_26](https://user-images.githubusercontent.com/84649871/128863822-32264cae-0809-40ff-836f-45d4f775b06c.png)
 
