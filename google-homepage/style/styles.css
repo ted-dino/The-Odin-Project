@@ -14,17 +14,13 @@ a {
 
 /* Nav Bar */
 .nav-items {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding-top: 20px;
-  overflow: hidden;
-  height: auto;
+  flex-direction: row-reverse;
 }
 
-.nav-items li {
-  float: right;
-  flex: 1;
-}
 
 .nav-items li a {
   text-align: center;
@@ -59,10 +55,6 @@ main {
   align-items: center;
   text-align: center;
   min-height: 75vh;
-}
-
-main img {
-  padding: 6px;
 }
 
 .input-border {
@@ -106,9 +98,7 @@ main img {
 .below-section p a{
   color: blue;
   margin: 3px;
-}
-
-main p {
+  text-decoration: underline;
   font-size: 13px;
   line-height: 28px;
 }
@@ -136,14 +126,10 @@ footer {
 }
 
 .footer-left {
-  text-align: start;
   padding: 10px;
 }
 
 .footer-left a,
 .footer-right a {
   padding: 15px;
-}
-.footer-right {
-  text-align: end;
 }
