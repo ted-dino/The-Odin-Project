@@ -1,8 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
 }
 
 a {
@@ -13,24 +10,22 @@ a {
 }
 
 /* Nav Bar */
-.nav-items {
+.top-section{
   display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding-top: 20px;
-  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
 }
 
-
-.nav-items li a {
-  text-align: center;
+.top-section a{
   padding: 10px 8px;
   font-size: 13px;
-  line-height: 24px;
   color: #000;
+  height: 100%;
 }
 
-.nav-items .button-style {
+.top-section .button-style {
   color: #fff;
   font-weight: bold;
   background: #1a73e8;
@@ -38,13 +33,8 @@ a {
   line-height: 16px;
   margin-left: 10px;
   margin-right: 8px;
-  padding: 9px 23px;
+  padding: 10px 23px;
   border-radius: 5px;
-  text-decoration: none;
-}
-
-li a:hover {
-  text-decoration: underline;
 }
 
 /* Main Section*/
@@ -54,7 +44,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 75vh;
+  min-height: 70vh;
 }
 
 .input-border {
@@ -67,7 +57,7 @@ main {
   border-radius: 30px;
 }
 
-.input-border:hover{
+.input-border:hover, .google-button:hover{
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.20);
 }
 
@@ -83,6 +73,7 @@ main {
 }
 
 .google-button {
+  background-color: #F8F9FA;
   width: 127px;
   height: 36px;
   color: #202124;
@@ -127,7 +118,6 @@ footer {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 20px;
 }
