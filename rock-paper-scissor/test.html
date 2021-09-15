@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Testing</title>
+</head>
+
+<body>
+    <h1>
+        THE TITLE OF YOUR WEBPAGE
+    </h1>
+    <div id="container"></div>
+
+    <script>
+        const container = document.querySelector('#container');
+
+        const content = document.createElement('div');
+        content.classList.add('content');
+        content.textContent = 'This is the glorious text-content!';
+
+        const paragraph = document.createElement('p');
+        paragraph.textContent = "Hey I'm red!";
+        paragraph.style.color = "red";
+        
+        const heading_3 = document.createElement("h3");
+        heading_3.textContent = "I'm a blue h3";
+        heading_3.style.color = "blue";
+
+        const div_element = document.createElement("div");
+        div_element.style.border = "1px solid black"
+        div_element.style["background-color"] = "pink"
+        const heading_1 = document.createElement("h1");
+        heading_1.textContent = "I'm in a div!"
+        const paragraph_2 = document.createElement("p");
+        paragraph_2.textContent = "ME TOO!"
+        div_element.appendChild(heading_1);
+        div_element.appendChild(paragraph_2);
+        
+        container.appendChild(content);
+        container.appendChild(paragraph);
+        container.appendChild(heading_3);
+        container.appendChild(div_element);
+    </script>
+</body>
+
+</html>

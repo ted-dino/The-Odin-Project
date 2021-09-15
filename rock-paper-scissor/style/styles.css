@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #9999FF;
+}
+
+header a img{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
