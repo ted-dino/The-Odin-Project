@@ -20,8 +20,6 @@ Using the browser’s developer tools (right-clicking something on the page and 
 [See it live here](https://ted-dino.github.io/The-Odin-Project/google-homepage/)
 
 
-
-
 It took me 2 days to finish this project. I'm new to Web Development so please don't judge my code.
 
 CSS IS SO HARD!!! (at least for me as a beginner)
