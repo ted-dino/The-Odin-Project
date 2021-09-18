@@ -36,7 +36,7 @@ By doing this I learned more about Flexbox.
 
 ### Continued development
 
-As always, in the future I will make more responsive and improve the looks.
+As always, in the future I will make more responsive and improve the design.
 
 ## Acknowledgments
 
