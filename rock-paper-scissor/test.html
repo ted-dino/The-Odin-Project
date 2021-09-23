@@ -13,6 +13,13 @@
         THE TITLE OF YOUR WEBPAGE
     </h1>
     <div id="container"></div>
+    <button id="btn">Click Me</button>
+
+    <div id="container">
+        <button id="1">Click Me</button>
+        <button id="2">Click Me</button>
+        <button id="3">Click Me</button>
+    </div>
 
     <script>
         const container = document.querySelector('#container');
@@ -23,26 +30,41 @@
 
         const paragraph = document.createElement('p');
         paragraph.textContent = "Hey I'm red!";
-        paragraph.style.color = "red";
-        
-        const heading_3 = document.createElement("h3");
-        heading_3.textContent = "I'm a blue h3";
-        heading_3.style.color = "blue";
+        paragraph.style.cssText = "color: red;"
 
-        const div_element = document.createElement("div");
-        div_element.style.border = "1px solid black"
-        div_element.style["background-color"] = "pink"
-        const heading_1 = document.createElement("h1");
-        heading_1.textContent = "I'm in a div!"
-        const paragraph_2 = document.createElement("p");
-        paragraph_2.textContent = "ME TOO!"
-        div_element.appendChild(heading_1);
-        div_element.appendChild(paragraph_2);
-        
+        const header_3 = document.createElement('h3');
+        header_3.textContent = 'I’m a blue h3!';
+        header_3.style.cssText = "color: blue;";
+
+        const sub_div = document.createElement('div');
+        sub_div.style.cssText = "border: 2px solid black; background-color: pink;"
+        const header_1 = document.createElement('h1');
+        header_1.textContent = "I’m in a div!"
+        const paragraph_2 = document.createElement('p')
+        paragraph_2.textContent = "me too!"
+
+        sub_div.appendChild(header_1);
+        sub_div.appendChild(paragraph_2);
+
         container.appendChild(content);
         container.appendChild(paragraph);
-        container.appendChild(heading_3);
-        container.appendChild(div_element);
+        container.appendChild(header_3);
+        container.appendChild(sub_div);
+
+        btn.addEventListener('click', function (e) {
+            e.target.style.background = 'blue';
+        });
+
+        const buttons = document.querySelectorAll('button');
+
+        // we use the .forEach method to iterate through each button
+        buttons.forEach((button) => {
+
+            // and for each one we add a 'click' listener
+            button.addEventListener('click', () => {
+                alert(button.id);
+            });
+        });
     </script>
 </body>
 
