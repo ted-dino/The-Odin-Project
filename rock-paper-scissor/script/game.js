@@ -1,3 +1,7 @@
+const buttons = document.querySelectorAll("button");
+const result = document.querySelector(".result");
+const score = document.querySelector(".score");
+
 let playerScore = 0;
 let computerScore = 0;
 
@@ -51,29 +55,18 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function getScore(player, computer) {
-  return `Player : ${player} and Computer: ${computer}`;
+  score.textContent = `Player : ${player} and Computer: ${computer}`;
 }
 
-// function game(){
-//     const playerSelection = "scissor";
-//     const computerSelection = computerPlay();
-//     console.log(playRound(playerSelection, computerSelection));
+function displayWinner() {
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const playerSelection = button.id.toUpperCase();
+      const computerSelection = computerPlay();
 
-//     const playerSelection2 = "scissor";
-//     const computerSelection2 = computerPlay();
-//     console.log(playRound(playerSelection2, computerSelection2));
+      result.textContent = playRound(playerSelection, computerSelection);
+    });
+  });
+}
 
-//     const playerSelection3 = "scissor";
-//     const computerSelection3 = computerPlay();
-//     console.log(playRound(playerSelection3, computerSelection3));
-
-//     const playerSelection4 = "scissor";
-//     const computerSelection4 = computerPlay();
-//     console.log(playRound(playerSelection4, computerSelection4));
-
-//     const playerSelection5 = "scissor";
-//     const computerSelection5 = computerPlay();
-//     console.log(playRound(playerSelection5, computerSelection5));
-// }
-
-// game()
+displayWinner();
