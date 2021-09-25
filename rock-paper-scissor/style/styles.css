@@ -30,16 +30,19 @@ ul {
 
 #container {
   padding: 1em;
-  border: 2px solid limegreen;
+  border: 2px solid var(--secondary-color);
   text-align: center;
 }
 
 #container :is(.computer__choice, .player__choice) {
-  border: 2px dashed #420;
-  width: 80px;
-  height: 80px;
   margin: 10px auto;
-  padding: 5px;
+  border: 2px dashed var(--secondary-color);
+  width: 150px;
+  height: 90px;
+}
+
+.computer__choice img {
+  transform: scale(-1, -1);
 }
 
 .container__header {
@@ -60,4 +63,16 @@ ul {
 
 .result {
   margin: 1.5em auto;
+}
+
+button {
+  margin: 0.2em;
+  border-radius: 1.125em;
+  border-style: none;
+  background-color: #ffffff;
+  outline: none;
+}
+
+img {
+  max-width: 55%;
 }
