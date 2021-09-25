@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #9999ff;
+  --secondary-color: #010618;
+
+  --primary-font: "Play", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -7,5 +15,49 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #9999ff;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--secondary-font);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+#container {
+  padding: 1em;
+  border: 2px solid limegreen;
+  text-align: center;
+}
+
+#container :is(.computer__choice, .player__choice) {
+  border: 2px dashed #420;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.container__header {
+  margin: 0;
+  font-size: 3rem;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+}
+
+.container__name {
+  font-size: 2rem;
+}
+
+.computer__score,
+.player__score {
+  font-size: 1.125rem;
+}
+
+.result {
+  margin: 1.5em auto;
 }

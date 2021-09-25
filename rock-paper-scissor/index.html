@@ -7,26 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Play:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css">
     <title>Rock Paper Scissor</title>
 </head>
 
 <body>
 
-    <a href="https://github.com/ted-dino" target="blank"><img src="images/GitHub-Mark-32px.png" alt="github icon"></a>
+    <main id="container">
+        <h1 class="container__header">Welcome!</h1>
+        <section id="computer">
+            <ul>
+                <li class="container__name">Computer</li>
+                <li class="computer__score">Score: </li>
+            </ul>
+            <div class="computer__choice"></div>
+        </section>
+        <div class="result">Please choose rock, paper or scissor.</div>
+        <section id="player">
+            <ul>
+                <li class="container__name">You</li>
+                <li class="player__score">Score: </li>
+            </ul>
+            <div class="player__choice"></div>
+        </section>
+        <div class="choices">
+            <button id="rock">ROCK</button>
+            <button id="paper">PAPER</button>
+            <button id="scissor">SCISSOR</button>
+        </div>
+    </main>
 
 
-    <div class="choices">
+    <!-- <div class="choices">
         <button id="rock">ROCK</button>
         <button id="paper">PAPER</button>
         <button id="scissor">SCISSOR</button>
     </div>
     <h1 class="result"></h1>
-    <h2 class="score"></h2>
+    <h2 class="score"></h2> -->
 
 
-    <script src="script/game.js" defer></script>
+    <!-- <script src="script/game.js" defer></script> -->
 </body>
 
 </html>
