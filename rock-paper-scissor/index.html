@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Play:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Play:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/styles.css" />
     <title>Rock Paper Scissor</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <main id="container">
-        <h1 class="container__header">Welcome!</h1>
-        <section id="computer">
-            <ul>
-                <li class="container__name">Computer</li>
-                <li class="computer__score">Score: </li>
-            </ul>
-            <div class="computer__choice"></div>
-        </section>
-        <h3 class="result">Please choose rock, paper or scissor.</h3>
+      <h1 class="container__header">Welcome!</h1>
+      <section id="computer">
+        <ul>
+          <li class="container__name">Computer</li>
+          <li class="computer__score">Score:</li>
+        </ul>
+        <div class="computer__choice"></div>
+      </section>
+      <h2 class="result">Please choose rock, paper or scissor.</h2>
 
-        <section id="player">
-            <ul>
-                <li class="container__name">You</li>
-                <li class="player__score">Score: </li>
-            </ul>
-            <div class="player__choice"></div>
-        </section>
-        <div class="choices">
-            <button id="rock">
-                <img src="./images/rock.png" alt="">
-            </button>
+      <section id="player">
+        <ul>
+          <li class="container__name">You</li>
+          <li class="player__score">Score:</li>
+        </ul>
+        <div class="player__choice"></div>
+      </section>
+      <div class="choices">
+        <button id="rock" class="choice">
+          <img src="./images/rock.png" alt="" />
+        </button>
 
-            <button id="paper">
-                <img src="./images/paper.png" alt="">
-            </button>
+        <button id="paper" class="choice">
+          <img src="./images/paper.png" alt="" />
+        </button>
 
-            <button id="scissor">
-                <img src="./images/scissor.png" alt="">
-            </button>
-        </div>
+        <button id="scissor" class="choice">
+          <img src="./images/scissor.png" alt="" />
+        </button>
+      </div>
     </main>
 
+    <div class="modal" id="modal">
+      <div class="modal-container">
+        <h3 class="winner"></h3>
+        <p>Do you want to play again?</p>
 
-    <!-- <div class="choices">
-        <button id="rock">ROCK</button>
-        <button id="paper">PAPER</button>
-        <button id="scissor">SCISSOR</button>
+        <div class="modal-buttons">
+          <button class="btn-secondary">No</button>
+          <button class="btn-primary">Yes</button>
+        </div>
+      </div>
     </div>
-    <h1 class="result"></h1>
-    <h2 class="score"></h2> -->
-
-
     <script src="script/game.js" defer></script>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Oregano&family=Roboto+Condensed&display=swap");
+
+:root {
+  --font-oregano: "Oregano", cursive;
+  --font-roboto: "Roboto Condensed", sans-serif;
+
+  --background-color: #004b45;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+
+  background-color: var(--background-color);
+  color: #fff;
+  font-family: var(--font-roboto);
+  text-align: center;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  max-width: 60rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.header__title {
+  margin-bottom: 0;
+  font-family: var(--font-oregano);
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 6px;
+}
+
+.header__sub {
+  margin-top: 0;
+  margin-bottom: 1.125em;
+}
+
+.container__grid {
+  display: grid;
+  height: 30em;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.control-section {
+  border: 2px solid #000;
+}
+
+.row__color {
+  border: none;
+  background-color: transparent;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 50%;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}

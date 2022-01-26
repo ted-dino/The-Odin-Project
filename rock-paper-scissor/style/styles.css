@@ -1,6 +1,8 @@
 :root {
   --primary-color: #9999ff;
   --secondary-color: #010618;
+  --gray: #eef1f6;
+  --white: #fff;
 
   --primary-font: "Play", sans-serif;
   --secondary-font: "Open Sans", sans-serif;
@@ -28,10 +30,15 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 #container {
   padding: 1em;
   border: 2px solid var(--secondary-color);
   text-align: center;
+  width: min(90%, 29.0625rem);
 }
 
 #container :is(.computer__choice, .player__choice) {
@@ -65,7 +72,7 @@ ul {
   margin: 1.5em auto;
 }
 
-button {
+.choice {
   margin: 0.2em;
   border-radius: 1.125em;
   border-style: none;
@@ -75,4 +82,62 @@ button {
 
 img {
   max-width: 55%;
+}
+
+.show-modal {
+  visibility: visible;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  text-align: center;
+}
+
+.modal-container {
+  background-color: white;
+  width: 26rem;
+  padding: 1.5rem;
+}
+
+.modal-container h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.modal-container p {
+  line-height: 1.5rem;
+  border-top: 1px solid var(--gray);
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.modal-buttons {
+  text-align: end;
+}
+
+.modal-buttons button {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-secondary {
+  color: var(--primary-color);
+  background-color: transparent;
 }
