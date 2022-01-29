@@ -196,6 +196,8 @@ function updateCPUScore() {
 function resetGame() {
   modal.style.cssText = "visibility: hidden";
   result.textContent = "Choose your weapon.";
+  player_choice.innerHTML = "";
+  computer_choice.innerHTML = "";
   computer__score.textContent = "Score: 0";
   player__score.textContent = "Score: 0";
 }
