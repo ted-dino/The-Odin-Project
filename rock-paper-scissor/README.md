@@ -32,8 +32,6 @@ This is a solution to the [Project: Rock Paper Scissors](https://www.theodinproj
 
 By doing this I learned more about javascript code.
 
-## Acknowledgments
-
-Credits:
+## Acknowledgment
 
 - UI Inspiration by <a href="http://www.onlywebpro.com/demo/rock_paper_scissors/index.html">onlyWebPro</a>
