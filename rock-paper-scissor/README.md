@@ -36,4 +36,4 @@ By doing this I learned more about javascript code.
 
 Credits:
 
-- UI Inspiration by <a href="http://www.onlywebpro.com/demo/rock_paper_scissors/index.html">Classic Rock–Paper–Scissors</a>
+- UI Inspiration by <a href="http://www.onlywebpro.com/demo/rock_paper_scissors/index.html">onlyWebPro</a>
