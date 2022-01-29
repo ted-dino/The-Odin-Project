@@ -9,7 +9,7 @@ This is a solution to the [Project: Rock Paper Scissors](https://www.theodinproj
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgment](#acknowledgment)
 
 ### The challenge
 
