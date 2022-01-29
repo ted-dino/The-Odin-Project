@@ -20,30 +20,30 @@
       <section id="computer">
         <ul>
           <li class="container__name">Computer</li>
-          <li class="computer__score">Score:</li>
+          <li class="computer__score">Score: 0</li>
         </ul>
         <div class="computer__choice"></div>
       </section>
-      <h2 class="result">Please choose rock, paper or scissor.</h2>
+      <h2 class="result">Choose your weapon.</h2>
 
       <section id="player">
         <ul>
           <li class="container__name">You</li>
-          <li class="player__score">Score:</li>
+          <li class="player__score">Score: 0</li>
         </ul>
         <div class="player__choice"></div>
       </section>
       <div class="choices">
         <button id="rock" class="choice">
-          <img src="./images/rock.png" alt="" />
+          <img id="rock" src="./images/ROCK.png" alt="" />
         </button>
 
         <button id="paper" class="choice">
-          <img src="./images/paper.png" alt="" />
+          <img id="paper" src="./images/PAPER.png" alt="" />
         </button>
 
         <button id="scissor" class="choice">
-          <img src="./images/scissor.png" alt="" />
+          <img id="scissor" src="./images/SCISSOR.png" alt="" />
         </button>
       </div>
     </main>
@@ -51,11 +51,9 @@
     <div class="modal" id="modal">
       <div class="modal-container">
         <h3 class="winner"></h3>
-        <p>Do you want to play again?</p>
 
-        <div class="modal-buttons">
-          <button class="btn-secondary">No</button>
-          <button class="btn-primary">Yes</button>
+        <div class="modal-button">
+          <button id="btn" class="btn-primary">Play Again</button>
         </div>
       </div>
     </div>

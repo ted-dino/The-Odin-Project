@@ -84,10 +84,6 @@ img {
   max-width: 55%;
 }
 
-.show-modal {
-  visibility: visible;
-}
-
 .modal {
   width: 100vw;
   height: 100vh;
@@ -114,18 +110,11 @@ img {
   font-weight: 700;
 }
 
-.modal-container p {
-  line-height: 1.5rem;
-  border-top: 1px solid var(--gray);
-  padding: 1rem 0;
-  font-weight: bold;
-}
-
-.modal-buttons {
+.modal-button {
   text-align: end;
 }
 
-.modal-buttons button {
+.modal-button button {
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   border-radius: 0.2rem;
@@ -135,9 +124,4 @@ img {
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--white);
-}
-
-.btn-secondary {
-  color: var(--primary-color);
-  background-color: transparent;
 }
