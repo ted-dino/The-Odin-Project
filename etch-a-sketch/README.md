@@ -30,5 +30,5 @@ In this project, you’ll be creating a pretty neat toy for your portfolio to fl
 
 ### Continued development
 
-[] Make some improvements in UI.
-[] Add some functionalites to make it more engaging.
+- Make some improvements in UI.
+- Add some functionalites to make it more engaging.
