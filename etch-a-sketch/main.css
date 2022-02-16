@@ -5,6 +5,7 @@
   --font-roboto: "Roboto Condensed", sans-serif;
 
   --background-color: #004b45;
+  --clr-primary: #fff;
 }
 
 *,
@@ -13,82 +14,63 @@
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  font: inherit;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-
-  background-color: var(--background-color);
-  color: #fff;
   font-family: var(--font-roboto);
+  background-color: var(--background-color);
+  line-height: 1.5;
+  min-height: 100vh;
+  color: var(--clr-primary);
+}
+
+.header {
   text-align: center;
-  height: 100vh;
-}
-
-.container {
-  margin: auto;
-  width: 80%;
-  max-width: 60rem;
-}
-
-.row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.btn {
-  margin: 0;
-  padding: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
 }
 
 .header__title {
-  margin-bottom: 0;
   font-family: var(--font-oregano);
-  font-size: 2rem;
-  line-height: 1;
-  letter-spacing: 6px;
+  font-size: 3rem;
 }
 
-.header__sub {
-  margin-top: 0;
-  margin-bottom: 1.125em;
+main {
+  margin-top: 6.25rem;
+  text-align: center;
 }
 
-.container__grid {
+.canvas {
+  margin-inline: auto;
   display: grid;
-  height: 30em;
-  background-color: #fff;
+  width: 500px;
+  height: 500px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.control-section {
-  border: 2px solid #000;
+.grid-element {
+  border: 1px solid black;
 }
 
-.row__color {
-  border: none;
-  background-color: transparent;
+button {
+  margin-bottom: 0.625rem;
+  padding: 0.3125rem 0.5rem;
+  border: 1px solid var(--clr-primary);
+  border-radius: 0.8125rem;
+  font-size: 1.5rem;
+  color: var(--clr-primary);
+  background-color: var(--background-color);
 }
-input[type="color"]::-webkit-color-swatch-wrapper {
-  padding: 0;
-  border-radius: 50%;
-}
-input[type="color"]::-webkit-color-swatch {
-  border: none;
-  border-radius: 50%;
+
+button:hover,
+button:focus {
+  background-color: var(--clr-primary);
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
 }

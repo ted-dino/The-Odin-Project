@@ -1,31 +1,37 @@
-const grid = document.querySelector(".container__grid");
-const range = document.querySelector("#range");
-const gridSize = document.querySelector("#grid-size");
-const div = document.querySelector("div");
+console.clear();
 
-function generateGrid(size) {
-  grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-  grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+const squares = document.querySelector(".canvas");
+const resetCanvas = document.querySelector(".resetCanvas");
+
+function setGrid(size) {
+  squares.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+  squares.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
   for (let i = 0; i < size * size; i++) {
     const gridElement = document.createElement("div");
-    gridElement.classList.add("sample");
-    grid.appendChild(gridElement);
+    gridElement.classList.add("grid-element");
+    gridElement.addEventListener("mouseover", draw);
+    squares.appendChild(gridElement);
   }
 }
 
-// range.onmousemove = (e) => updateGridSize(e);
+function draw(element) {
+  element.target.style.backgroundColor = "#fff";
+}
 
-// function updateGridSize(size) {
-//   gridSize.innerHTML = size.target.value;
-// }
+function resetGrid() {
+  const promptText = prompt(
+    "Please input your desired size of grid. (1 - 100)\n 16x16 is set when textbox is blank."
+  );
 
-// range.addEventListener("change", function () {
-//   generateGrid(this.value);
-// });
+  squares.innerHTML = "";
+  if (promptText) {
+    setGrid(promptText);
+  } else {
+    setGrid(16);
+  }
+}
 
-generateGrid(5);
+resetCanvas.addEventListener("click", resetGrid);
 
-div.addEventListener("mousedown", function () {
-  console.log("hold");
-});
+setGrid(16);
