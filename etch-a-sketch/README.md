@@ -18,7 +18,7 @@ In this project, you’ll be creating a pretty neat toy for your portfolio to fl
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Click me](https://ted-dino.github.io/The-Odin-Project/etch-a-sketch/)
 
 ## My process
 
@@ -30,5 +30,5 @@ In this project, you’ll be creating a pretty neat toy for your portfolio to fl
 
 ### Continued development
 
-[] Make some improvements in UI.
-[] Add some functionalites to make it more engaging.
+- Make some improvements in UI.
+- Add some functionalites to make it more engaging.
