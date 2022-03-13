@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+input,
+button {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+span {
+  display: block;
+  margin-block: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: clamp(1rem, calc(0.9rem + 0.49vw), 1.25rem);
+  border-radius: 0.8125rem;
+  outline: none;
+  border: 1px solid #919191;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f8f8f8;
+}
+
+.calculator {
+  width: min(90%, 25rem);
+  height: 37.5rem;
+  border-radius: 0.8125rem;
+  overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 0.6875rem 0 rgba(0, 0, 0, 0.55);
+}
+
+.calculator__input {
+  background-color: #f8f8f8;
+  height: 30%;
+  text-align: center;
+}
+
+.result {
+  font-size: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+.operand {
+  font-size: 1.5625rem;
+  color: #919191;
+}
+
+.calculator__keys {
+  background-color: #ffffff;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 70%;
+  gap: 0.625rem;
+  padding: 1rem;
+}
+button:nth-child(8),
+button:nth-child(15) {
+  grid-row: span 2;
+}
