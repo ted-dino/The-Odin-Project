@@ -1,0 +1,167 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+}
+
+:root {
+  --clr-primary: hsl(0, 0%, 100%);
+  --clr-secondary: hsl(92, 20%, 35%);
+  --clr-accent: hsl(220, 13%, 91%);
+}
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url(./assets/Norse-Bold.otf);
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+main .left-side {
+  border: 1px solid;
+  flex-direction: column;
+  width: 30%;
+  height: 100vh;
+  background-image: url("./assets/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 30%;
+  background-color: rgb(0, 0, 0, 0.5);
+  justify-content: center;
+}
+
+.logo .logo__image {
+  padding: 1rem;
+  width: 9.375rem;
+  height: 9.375rem;
+  object-fit: contain;
+}
+
+.logo__author {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+.logo__author,
+.logo__author a {
+  color: var(--clr-primary);
+}
+
+.logo__title {
+  font-family: "Norse-Bold", sans-serif;
+  font-size: 5rem;
+  color: var(--clr-primary);
+}
+
+.right-side {
+  align-self: flex-start;
+  flex-grow: 1;
+  background-color: #f9fafb;
+  height: 100vh;
+}
+
+.right-side .intro {
+  padding: 10% 0 0 3rem;
+  max-width: 53.125rem;
+  height: 19.375rem;
+  font-size: 1.5rem;
+}
+
+.form-field {
+  margin-top: 5%;
+  padding: 2rem 3rem;
+  box-shadow: 0px 3px 12px -4px rgba(0, 0, 0, 0.57);
+  background-color: var(--clr-primary);
+}
+
+.form-field .form-field__header {
+  font-size: 1.5rem;
+}
+
+.form {
+  margin-top: 1rem;
+  max-width: 43.75rem;
+  flex-wrap: wrap;
+  gap: 1.25rem 3.125rem;
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+  box-shadow: 0px 3px 12px -4px rgba(0, 0, 0, 0.57);
+}
+
+.password-error {
+  font-size: 0.625rem;
+  color: hsl(0, 100%, 50%);
+  display: block;
+}
+
+.password-error::before {
+  content: "* ";
+}
+
+.form > div:nth-child(6) {
+  height: 69px;
+}
+
+.submit-section {
+  padding: 3rem;
+}
+
+.submit-section button {
+  background-color: var(--clr-secondary);
+  font-size: 1.125rem;
+  color: var(--clr-primary);
+  font-weight: 700;
+  border: none;
+  padding: 0.625rem 1.875rem;
+  border-radius: 0.8125rem;
+  cursor: pointer;
+}
+
+.submit-section p {
+  margin-top: 0.75rem;
+}
+
+.submit-section p a {
+  color: var(--clr-secondary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.submit-section p a:hover {
+  text-decoration: underline;
+}
