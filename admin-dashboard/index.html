@@ -19,7 +19,7 @@
       </div>
 
       <ul class="primary-list" role="list">
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -28,16 +28,16 @@
           </svg>
           <a href="#">Home</a>
         </li>
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
-              d="M8,9A2,2 0 0,1 10,11A2,2 0 0,1 8,13A2,2 0 0,1 6,11A2,2 0 0,1 8,9M12,17H4V16C4,14.67 6.67,14 8,14C9.33,14 12,14.67 12,16V17M20,8H14V10H20V8M20,12H14V14H20V12M20,16H14V18H20V16M22,4H14V6H22V20H2V6H10V4H2A2,2 0 0,0 0,6V20A2,2 0 0,0 2,22H22A2,2 0 0,0 24,20V6A2,2 0 0,0 22,4M13,6H11V2H13V6Z"
+              d="M8,9A2,2 0 0,1 10,11A2,2 0 0,1 8,13A2,2 0 0,1 6,11A2,2 0 0,1 8,9M12,17aV16C4,14.67 6.67,14 8,14C9.33,14 12,14.67 12,16V17M20,8H14V10H20V8M20,12H14V14H20V12M20,16H14V18H20V16M22,4H14V6H22V20H2V6H10V4H2A2,2 0 0,0 0,6V20A2,2 0 0,0 2,22H22A2,2 0 0,0 24,20V6A2,2 0 0,0 22,4M13,6H11V2H13V6Z"
             />
           </svg>
           <a href="#">Profile</a>
         </li>
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -46,7 +46,7 @@
           </svg>
           <a href="#">Messages</a>
         </li>
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -55,7 +55,7 @@
           </svg>
           <a href="#">History</a>
         </li>
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -64,7 +64,7 @@
           </svg>
           <a href="#">Tasks</a>
         </li>
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -76,7 +76,7 @@
       </ul>
 
       <ul class="secondary-list" role="list">
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -85,7 +85,7 @@
           </svg>
           <a href="#">Settings</a>
         </li>
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -94,7 +94,7 @@
           </svg>
           <a href="#">Support</a>
         </li>
-        <li class="list-items">
+        <li class="list-items d-flex">
           <svg id="list__icon" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -107,8 +107,8 @@
     </section>
     <main>
       <header class="user">
-        <div class="top">
-          <div class="search">
+        <div class="top d-flex">
+          <div class="search d-flex">
             <label for="query">
               <svg id="list__icon" viewBox="0 0 24 24">
                 <path
@@ -119,7 +119,7 @@
             </label>
             <input type="text" name="query" id="query" />
           </div>
-          <div class="account">
+          <div class="account d-flex">
             <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -127,30 +127,255 @@
               />
             </svg>
             <img
-              src="./saitama.jpeg"
+              src="./assets/saitama.jpeg"
               width="50"
               height="50"
               alt="random image"
+              class="account-image"
             />
             <span>Saitama</span>
           </div>
         </div>
         <div class="bottom">
-          <div class="profile">
+          <div class="profile d-flex">
             <img
-              src="./saitama.jpeg"
+              src="./assets/saitama.jpeg"
               width="70"
               height="70"
               alt="random image"
+              class="account-image"
             />
             <div class="greeting">
               <span>Hi there,</span>
               <span>Saitama (@onepunchman)</span>
             </div>
           </div>
+          <div class="options"></div>
         </div>
       </header>
-      <section class="components"></section>
+      <section class="components">
+        <div class="projects">
+          <h2>Your Projects</h2>
+          <div class="project content-container">
+            <h4 class="project__name">Super Cool Project</h4>
+            <p class="project__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore tenetur maiores iure, nam vitae sunt animi id deleniti
+              excepturi ex?
+            </p>
+            <div class="project__links">
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                  /></svg
+              ></a>
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M9.54 15.65L11.63 17.74L10.35 19L7 15.65L10.35 12.3L11.63 13.56L9.54 15.65M17 15.65L13.65 19L12.38 17.74L14.47 15.65L12.38 13.56L13.65 12.3L17 15.65Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="project content-container">
+            <h4 class="project__name">Super Cool Project</h4>
+            <p class="project__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore tenetur maiores iure, nam vitae sunt animi id deleniti
+              excepturi ex?
+            </p>
+            <div class="project__links">
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                  /></svg
+              ></a>
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M9.54 15.65L11.63 17.74L10.35 19L7 15.65L10.35 12.3L11.63 13.56L9.54 15.65M17 15.65L13.65 19L12.38 17.74L14.47 15.65L12.38 13.56L13.65 12.3L17 15.65Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="project content-container">
+            <h4 class="project__name">Super Cool Project</h4>
+            <p class="project__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore tenetur maiores iure, nam vitae sunt animi id deleniti
+              excepturi ex?
+            </p>
+            <div class="project__links">
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                  /></svg
+              ></a>
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M9.54 15.65L11.63 17.74L10.35 19L7 15.65L10.35 12.3L11.63 13.56L9.54 15.65M17 15.65L13.65 19L12.38 17.74L14.47 15.65L12.38 13.56L13.65 12.3L17 15.65Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="project content-container">
+            <h4 class="project__name">Super Cool Project</h4>
+            <p class="project__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore tenetur maiores iure, nam vitae sunt animi id deleniti
+              excepturi ex?
+            </p>
+            <div class="project__links">
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                  /></svg
+              ></a>
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M9.54 15.65L11.63 17.74L10.35 19L7 15.65L10.35 12.3L11.63 13.56L9.54 15.65M17 15.65L13.65 19L12.38 17.74L14.47 15.65L12.38 13.56L13.65 12.3L17 15.65Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="project content-container">
+            <h4 class="project__name">Super Cool Project</h4>
+            <p class="project__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore tenetur maiores iure, nam vitae sunt animi id deleniti
+              excepturi ex?
+            </p>
+            <div class="project__links">
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                  /></svg
+              ></a>
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M9.54 15.65L11.63 17.74L10.35 19L7 15.65L10.35 12.3L11.63 13.56L9.54 15.65M17 15.65L13.65 19L12.38 17.74L14.47 15.65L12.38 13.56L13.65 12.3L17 15.65Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="project content-container">
+            <h4 class="project__name">Super Cool Project</h4>
+            <p class="project__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore tenetur maiores iure, nam vitae sunt animi id deleniti
+              excepturi ex?
+            </p>
+            <div class="project__links">
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"
+                  /></svg
+              ></a>
+              <a href="#"
+                ><svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                  <path
+                    d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M9.54 15.65L11.63 17.74L10.35 19L7 15.65L10.35 12.3L11.63 13.56L9.54 15.65M17 15.65L13.65 19L12.38 17.74L14.47 15.65L12.38 13.56L13.65 12.3L17 15.65Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <aside id="announcements">
+          <h2>Announcements</h2>
+          <div class="aside-container content-container">
+            <div class="content">
+              <a href="#">Site Maintenance</a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                praesentium ab fuga assumenda iusto nisi asperiores nam atque
+                pariatur. Vel?
+              </p>
+            </div>
+            <div class="content">
+              <a a href="#">Community Day Share</a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                praesentium ab fuga assumenda iusto nisi asperiores nam atque
+                pariatur. Vel?
+              </p>
+            </div>
+            <div class="content">
+              <a href="#">Update Privacy Policy</a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                praesentium ab fuga assumenda iusto nisi asperiores nam atque
+                pariatur. Vel?
+              </p>
+            </div>
+          </div>
+        </aside>
+        <aside id="trending">
+          <h2>Trending</h2>
+          <div class="trending-container content-container">
+            <div class="profile d-flex">
+              <img
+                src="./assets/fubuki.png"
+                width="50"
+                height="50"
+                alt="random image"
+                class="account-image"
+              />
+              <div class="greeting">
+                <span class="hero-account">@fubuki</span>
+                <span class="hero-status">Saitama's Bitch</span>
+              </div>
+            </div>
+            <div class="profile d-flex">
+              <img
+                src="./assets/genos.png"
+                width="50"
+                height="50"
+                alt="random image"
+                class="account-image"
+              />
+              <div class="greeting">
+                <span class="hero-account">@genos</span>
+                <span class="hero-status">Saitama's Apprenctice</span>
+              </div>
+            </div>
+            <div class="profile d-flex">
+              <img
+                src="./assets/king.png"
+                width="50"
+                height="50"
+                alt="random image"
+                class="account-image"
+              />
+              <div class="greeting">
+                <span class="hero-account">@king</span>
+                <span class="hero-status">Man of culture</span>
+              </div>
+            </div>
+            <div class="profile d-flex">
+              <img
+                src="./assets/mumen-raider.png"
+                width="50"
+                height="50"
+                alt="random image"
+                class="account-image"
+              />
+              <div class="greeting">
+                <span class="hero-account">@mumen-raider</span>
+                <span class="hero-status">Great Hero</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
     </main>
   </body>
 </html>
